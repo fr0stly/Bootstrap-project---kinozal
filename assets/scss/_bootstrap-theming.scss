@@ -92,3 +92,13 @@
     font-size: 1.25rem;
   }
 }
+.input {
+  &-lg,
+  &-group-lg > .form-control {
+    font-size: 0.875rem;
+  }
+}
+
+.thumbnail {
+  transition: 0.25s;
+}
