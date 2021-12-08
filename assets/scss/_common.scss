@@ -12,6 +12,12 @@ body {
   font-size: $font-size;
 }
 
+h1 {
+  font-family: $font-header;
+  font-size: 3rem;
+  margin: -$gap-md 0 1em 0;
+}
+
 a {
   color: $color-primary;
 

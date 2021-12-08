@@ -75,6 +75,12 @@ body {
   font-size: 16px;
 }
 
+h1 {
+  font-family: "PT Serif", serif;
+  font-size: 3rem;
+  margin: -10.005px 0 1em 0;
+}
+
 a {
   color: #165690;
 }
@@ -112,6 +118,30 @@ a:hover, a:focus {
 
 .main {
   margin-bottom: 80px;
+}
+
+.site-search {
+  margin-bottom: 45px;
+}
+
+.user-login {
+  margin-bottom: 60px;
+}
+
+.new-films {
+  margin-bottom: 80px;
+}
+.new-films-row {
+  padding-left: -7.5px;
+  padding-right: -7.5px;
+}
+.new-films-item {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  margin-bottom: 15px;
+}
+.new-films-item__thumbnail {
+  margin-bottom: 0;
 }
 
 .sidebar-left {

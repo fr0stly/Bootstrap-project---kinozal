@@ -4,3 +4,31 @@
 .main {
   margin-bottom: $gap-xl;
 }
+
+.site-search {
+  margin-bottom: $gap * 3;
+}
+
+.user-login {
+  margin-bottom: $gap * 4;
+}
+
+.new-films {
+  margin-bottom: $gap-xl;
+
+  &-row {
+    padding-left: -$gap-sm;
+    padding-right: -$gap-sm;
+    margin-bottom: -$gap;
+  }
+
+  &-item {
+    padding-left: $gap-sm;
+    padding-right: $gap-sm;
+    margin-bottom: $gap;
+
+    &__thumbnail {
+      margin-bottom: 0;
+    }
+  }
+}
