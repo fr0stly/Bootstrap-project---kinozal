@@ -131,7 +131,7 @@ $image-size-with-padding: $image-size + $gap-md;
   &__badge {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     right: $gap;
+    transform: translateY(-50%);
   }
 }
