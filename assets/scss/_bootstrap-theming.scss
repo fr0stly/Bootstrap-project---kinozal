@@ -69,7 +69,7 @@
   border: none;
   background-color: #f4f4f4;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
 
   &-info {
     border: none;
@@ -102,11 +102,4 @@
   &-group-lg > .form-control {
     font-size: 0.875rem;
   }
-}
-
-.thumbnail {
-  -webkit-transition: background-color 0.25s;
-  -o-transition: background-color 0.25s;
-
-  transition: 0.25s;
 }

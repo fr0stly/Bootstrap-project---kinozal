@@ -4,78 +4,27 @@
 .main {
   margin-bottom: $gap-xl;
 
-  &.site-search {
-    margin-bottom: 45px;
+  .site-search {
+    margin-bottom: $gap * 3;
   }
-  &.user-login {
-    margin-bottom: 60px;
-  }
-}
-
-.site-search {
-  margin-bottom: $gap * 3;
-}
-
-.user-login {
-  margin-bottom: $gap * 4;
-}
-
-.new-films {
-  &-row {
-    padding-left: -$gap-sm;
-    padding-right: -$gap-sm;
-    margin-bottom: -$gap;
-  }
-
-  &-item {
-    padding-left: $gap-sm;
-    padding-right: $gap-sm;
-    margin-bottom: $gap;
-
-    &__thumbnail {
-      margin-bottom: 0;
-    }
-    &__image {
-      width: 100%;
-    }
-    &__title {
-      display: block;
-      overflow: hidden;
-
-      margin: 0;
-
-      white-space: nowrap;
-      text-overflow: ellipsis;
-
-      font-size: 1rem;
-      font-weight: bold;
-
-      -o-text-overflow: ellipsis;
-    }
-    &__caption {
-      text-align: center;
-    }
-    &:hover .thumbnail {
-      border-color: $color-accent;
-      background-color: $color-accent;
-    }
-    &:hover h3 {
-      color: $color-white;
-    }
+  .user-login {
+    margin-bottom: $gap * 4;
   }
 }
 
+.new-films,
 .top-week {
+  margin-bottom: 0;
   &-row {
-    padding-left: -$gap-sm;
-    padding-right: -$gap-sm;
+    margin-right: -$gap-sm;
     margin-bottom: -$gap;
+    margin-left: -$gap-sm;
   }
 
   &-item {
-    padding-left: $gap-sm;
-    padding-right: $gap-sm;
     margin-bottom: $gap;
+    padding-right: $gap-sm;
+    padding-left: $gap-sm;
 
     &__thumbnail {
       margin-bottom: 0;
@@ -90,7 +39,7 @@
       margin: 0;
 
       white-space: nowrap;
-      text-overflow: ellipsis;
+         text-overflow: ellipsis;
 
       font-size: 1rem;
       font-weight: bold;
@@ -110,13 +59,16 @@
   }
 }
 
-.film-news-item {
+.film-news-item,
+.thumbnail {
   margin-bottom: 0;
 
   -webkit-transition: background-color 0.25s;
-  -o-transition: background-color 0.25s;
-  transition: background-color 0.25s;
+       -o-transition: background-color 0.25s;
+          transition: background-color 0.25s;
+}
 
+.film-news-item {
   &__image {
     width: 100%;
   }
@@ -129,13 +81,13 @@
     margin-bottom: 30px;
 
     -webkit-transition: background-color 0.25s;
-    -o-transition: background-color 0.25s;
-    transition: background-color 0.25s;
+         -o-transition: background-color 0.25s;
+            transition: background-color 0.25s;
   }
   h3 > a {
     -webkit-transition: color 0.25s;
-    -o-transition: color 0.25s;
-    transition: color 0.25s;
+         -o-transition: color 0.25s;
+            transition: color 0.25s;
   }
   &:hover h3 > a {
     color: $color-accent;
