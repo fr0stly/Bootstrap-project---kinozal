@@ -1,7 +1,7 @@
 @use "presets" as *;
 @use "mixins" as *;
 
-.sidebar-left {
+.left-sidebar- {
   margin-bottom: $gap-xl;
 }
 
@@ -20,11 +20,14 @@
   &__tabs {
     position: absolute;
     top: 0;
-    right: $gap-md;
+    right: $gap;
+
+    margin-right: -5px;
+
     border: none;
 
     a {
-      padding: 14px 5px 12px !important;
+      padding: 14px 5px 11px !important;
       border: none !important;
       color: $color-gray;
       background-color: transparent !important;
@@ -42,6 +45,10 @@ $image-size-with-padding: $image-size + $gap-md;
 .site-news-item {
   position: relative;
   clear: both;
+
+  &__image {
+    width: 100%;
+  }
 
   &:not(:last-child) {
     min-height: $image-size-with-padding;
@@ -75,16 +82,11 @@ $image-size-with-padding: $image-size + $gap-md;
   }
   &__title {
     margin-bottom: 0.5em;
-
-    @include block-shortener(1rem, 1.5, 50px, 2);
   }
   &__link {
     transition: 0.25s;
 
-    display: block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    @include block-shortener(1rem, 1.5, 50px, 2);
   }
   &__date {
     text-align: right;

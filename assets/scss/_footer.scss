@@ -7,21 +7,21 @@
   color: $color-gray;
   background-color: $color-dark;
 
-  ul {
-    padding: 0;
-    list-style: none;
+  a {
+    color: $color-gray-dark;
 
-    a {
-      color: $color-gray-dark;
-
-      &:hover {
-        color: $color-white;
-      }
+    &:hover {
+      color: $color-white;
     }
   }
 
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
   &-fifth {
-    margin: $gap 0;
+    margin: 20px 0;
 
     text-align: center;
 

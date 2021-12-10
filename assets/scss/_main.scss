@@ -3,6 +3,13 @@
 
 .main {
   margin-bottom: $gap-xl;
+
+  &.site-search {
+    margin-bottom: 45px;
+  }
+  &.user-login {
+    margin-bottom: 60px;
+  }
 }
 
 .site-search {
@@ -14,8 +21,6 @@
 }
 
 .new-films {
-  margin-bottom: $gap-xl;
-
   &-row {
     padding-left: -$gap-sm;
     padding-right: -$gap-sm;
@@ -29,6 +34,78 @@
 
     &__thumbnail {
       margin-bottom: 0;
+    }
+    &__image {
+      width: 100%;
+    }
+    &__title {
+      display: block;
+      overflow: hidden;
+
+      margin: 0;
+
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      font-size: 1rem;
+      font-weight: bold;
+
+      -o-text-overflow: ellipsis;
+    }
+    &__caption {
+      text-align: center;
+    }
+    &:hover .thumbnail {
+      border-color: $color-accent;
+      background-color: $color-accent;
+    }
+    &:hover h3 {
+      color: $color-white;
+    }
+  }
+}
+
+.top-week {
+  &-row {
+    padding-left: -$gap-sm;
+    padding-right: -$gap-sm;
+    margin-bottom: -$gap;
+  }
+
+  &-item {
+    padding-left: $gap-sm;
+    padding-right: $gap-sm;
+    margin-bottom: $gap;
+
+    &__thumbnail {
+      margin-bottom: 0;
+    }
+    &__image {
+      width: 100%;
+    }
+    &__title {
+      display: block;
+      overflow: hidden;
+
+      margin: 0;
+
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      font-size: 1rem;
+      font-weight: bold;
+
+      -o-text-overflow: ellipsis;
+    }
+    &__caption {
+      text-align: center;
+    }
+    &:hover .thumbnail {
+      border-color: $color-accent;
+      background-color: $color-accent;
+    }
+    &:hover h3 {
+      color: $color-white;
     }
   }
 }
@@ -61,14 +138,14 @@
     transition: color 0.25s;
   }
   &:hover h3 > a {
-    color: #df8a13;
+    color: $color-accent;
   }
   &:hover .thumbnail {
-    border-color: #df8a13;
-    background-color: #df8a13;
+    border-color: $color-accent;
+    background-color: $color-accent;
   }
   &:hover .btn-warning {
-    background-color: #df8a13;
+    background-color: $color-accent;
   }
 }
 
@@ -79,7 +156,7 @@
     white-space: nowrap;
 
     &:not(:last-of-type) {
-      margin-right: 15px;
+      margin-right: $gap;
     }
   }
   &__badge {

@@ -1,0 +1,13 @@
+@use "presets" as *;
+@use "mixins" as *;
+
+.embed-responsive {
+  border: 1px solid $color-gray;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.well {
+  border-color: $color-gray;
+  background-color: $color-gray-light;
+}

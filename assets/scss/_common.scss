@@ -2,12 +2,13 @@
 @use "mixins" as *;
 
 html {
-  overflow-y: scroll;
-
   font-size: $font-size;
 }
 
 body {
+  overflow-x: hidden;
+  max-width: 100%;
+
   font-family: $font-main;
   font-size: $font-size;
 }
@@ -16,6 +17,43 @@ h1 {
   font-family: $font-header;
   font-size: 3rem;
   margin: -$gap-md 0 1em 0;
+}
+
+h1::after {
+  position: absolute;
+
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+
+  content: "";
+
+  border-bottom: 3px solid #f0ad4f;
+}
+
+h2 {
+  font-family: "PT Serif", serif;
+
+  &::before {
+    position: absolute;
+    left: 0;
+
+    width: 30px;
+    margin: 0.25em 0 0 0;
+
+    content: "";
+
+    border-bottom: 3px solid #f0ad4f;
+  }
+  &::after {
+    position: absolute;
+
+    width: 100%;
+    margin: 0.85em 0 0 15px;
+
+    content: "";
+
+    border-bottom: 3px solid #f0ad4f;
+  }
 }
 
 a {
@@ -27,4 +65,10 @@ a {
 
     color: $color-accent;
   }
+}
+
+section {
+  position: relative;
+
+  overflow: hidden;
 }
